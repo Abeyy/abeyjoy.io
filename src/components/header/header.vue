@@ -1,20 +1,24 @@
 <template>
   <div class="aj-header-main navbar navbar-inverse">
+
     <div class="aj-social-icons row">
       <a href="https://github.com/Abeyy/"><i class="fab fa-github"></i></a>
       <a href="https://www.instagram.com/abeyjjoy/"><i class="fas fa-camera-retro"></i></a>
       <a href="https://www.facebook.com/abey.j.joy"><i class="fab fa-facebook-f"></i></a>
     </div>
+
     <div class="aj-header-text row">
       <div class="col-md-3 col-lg-3 col-xl-3"></div>
       <div class="col-xs-12 col-s-12 col-md-6 col-lg-6 col-xl-6">
         Web developer with a proven track record of shipping clean, re-usable
         code. Currently disrupting how you shop as a Product Engineer at
         <a href="https://www.mikmak.tv"> MikMak.tv</a>
-
       </div>
       <div class="col-md-3 col-lg-3 col-xl-3"></div>
+    </div>
 
+    <div class="scrollText" v-show="showScroll">
+      <i class="fas fa-arrow-down"></i> Scroll
     </div>
   </div>
 </template>
@@ -22,8 +26,32 @@
 <script>
 
 export default {
+  data() {
+    return {
+      showScroll: false
+    }
+  },
+  mounted() {
+    this.scrollTimer()
+  },
   components: {},
-  computed: {}
+  computed: {},
+  methods: {
+    scrollTimer() {
+      setTimeout(() => {
+        this.showScroll = true
+      }, 7500)
+    }
+  },
+  watch: {
+    showScroll() {
+      if(this.showScroll == true) {
+        setTimeout(() => {
+          this.showScroll = false
+        }, 10000)
+      }
+    }
+  }
 }
 </script>
 
@@ -76,5 +104,14 @@ export default {
     // width: 50%;
     // margin-left: 25%;
     text-shadow: 1px 1px #666;
+  }
+
+  .scrollText {
+    font-size: 36px;
+    color: white;
+    text-shadow: 1px 1px #666;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
   }
 </style>
