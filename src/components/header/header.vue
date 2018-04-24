@@ -33,6 +33,7 @@ export default {
   },
   mounted() {
     this.scrollTimer()
+    this.scrollHandler()
   },
   components: {},
   computed: {},
@@ -41,17 +42,15 @@ export default {
       setTimeout(() => {
         this.showScroll = true
       }, 7500)
+    },
+    scrollHandler() {
+      let self = this
+      window.addEventListener('scroll', function(e) {
+        self.showScroll = false
+      })
     }
   },
-  watch: {
-    showScroll() {
-      if(this.showScroll == true) {
-        setTimeout(() => {
-          this.showScroll = false
-        }, 10000)
-      }
-    }
-  }
+  watch: {}
 }
 </script>
 
