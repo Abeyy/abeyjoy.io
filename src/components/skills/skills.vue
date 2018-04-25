@@ -51,7 +51,6 @@
       <div class="card-body">
         <h5 class="card-title">Interests</h5>
       </div>
-      Test
     </div>
 
     <div class="card col-xs-12 col-s-12 col-md-3 col-lg-3 col-xl-3">
@@ -59,7 +58,6 @@
       <div class="card-body">
         <h5 class="card-title">Trivia</h5>
       </div>
-      Test
     </div>
 
     <!-- <div class="col-md-1 col-lg-1 col-xl-1"></div> -->
