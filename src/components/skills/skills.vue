@@ -6,8 +6,14 @@
       <img src="https://firebasestorage.googleapis.com/v0/b/abeyjoysite.appspot.com/o/skills-study.gif?alt=media&token=4c36fef0-8ced-4ac0-a64a-e365f902ca4d" alt="">
       <div class="card-body">
         <h5 class="card-title">Education</h5>
+        <span class='nyu'>
+          <img class='nyu-img' src="https://firebasestorage.googleapis.com/v0/b/abeyjoysite.appspot.com/o/nyu.jpg?alt=media&token=d393b56b-a48e-4cfc-8c4d-dee5bbc1a196">
+          <span class='nyu-header'> New York University</span>
+          <div> Tandon School of Engineering</div>
+          <div> B.S. Computer Engineering, <span class='nyu-date'>2016</span></div>
+          <div> B.S. Electrical Engineering, <span class='nyu-date'>2017</span></div>
+        </span>
       </div>
-      Test
     </div>
 
     <div class="card col-xs-12 col-s-12 col-md-3 col-lg-3 col-xl-3">
@@ -51,9 +57,30 @@
     margin: 25px;
     padding:0;
     max-width: 20%;
+    // box-shadow: 4px 5px #666;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
     img {
       height: 200px;
       width:100%;
+    }
+  }
+  img.nyu-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .nyu {
+    .nyu-header {
+      font-size: 16px;
+      font-weight: 700;
+    }
+    div {
+
+    }
+    .nyu-date {
+      font-style: italic;
     }
   }
 </style>
