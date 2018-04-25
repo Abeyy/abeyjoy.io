@@ -20,8 +20,30 @@
       <img src="https://firebasestorage.googleapis.com/v0/b/abeyjoysite.appspot.com/o/skill-programming.gif?alt=media&token=cb133233-e052-43a9-8e64-dd70807dec16" alt="">
       <div class="card-body">
         <h5 class="card-title">Programming Skills</h5>
+        <span class="skills-programming-section">
+          <div>
+            <img class="prg-img" src="https://firebasestorage.googleapis.com/v0/b/abeyjoysite.appspot.com/o/jsicon.png?alt=media&token=78b0e10e-8990-407c-b04d-6e49b59e6956">
+            <span class="programming-text"> JavaScript, <span style="font-style:italic">5 years</span></span>
+          </div>
+
+          <div>
+            <img class='prg-img' src="https://firebasestorage.googleapis.com/v0/b/abeyjoysite.appspot.com/o/ruby.png?alt=media&token=13c4f7c2-af09-4b8d-bf83-54a01d561e11">
+            <span class="programming-text"> Ruby, <span style="font-style:italic">3 years</span></span>
+          </div>
+
+          <div>
+            <img class='prg-img' src="https://firebasestorage.googleapis.com/v0/b/abeyjoysite.appspot.com/o/c%2B%2B.png?alt=media&token=55c96f8f-127c-4b9c-b5c9-93a848056b19">
+            <span class="programming-text"> C++, <span style="font-style:italic">4 years</span></span>
+          </div>
+
+          <div>
+            <img class='prg-img' src="https://firebasestorage.googleapis.com/v0/b/abeyjoysite.appspot.com/o/python.png?alt=media&token=78d002b7-2e01-43c2-bc90-fca3a6ae1f6e">
+            <span class="programming-text"> Python, <span style="font-style:italic">4 years</span></span>
+          </div>
+
+        </span>
       </div>
-      Test
+
     </div>
 
     <div class="card col-xs-12 col-s-12 col-md-3 col-lg-3 col-xl-3">
@@ -66,7 +88,7 @@
       width:100%;
     }
   }
-  img.nyu-img {
+  img.nyu-img, img.prg-img {
     width: 30px;
     height: 30px;
   }
@@ -76,11 +98,18 @@
       font-size: 16px;
       font-weight: 700;
     }
-    div {
-
-    }
     .nyu-date {
       font-style: italic;
     }
   }
+
+  .skills-programming-section {
+    div {
+      margin: 10px 0px;
+    }
+    .programming-text {
+      vertical-align: -webkit-baseline-middle;
+    }
+  }
+
 </style>
