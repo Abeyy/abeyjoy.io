@@ -12,7 +12,7 @@
       <div class="col-xs-12 col-s-12 col-md-6 col-lg-6 col-xl-6">
         Web developer with a proven track record of shipping clean, re-usable
         code. Currently disrupting how you shop as a Product Engineer at
-        <a href="https://www.mikmak.tv"> MikMak.tv</a>
+        <a href="https://www.mikmak.tv"> <span id="typed-string"></span></a>
       </div>
       <div class="col-md-3 col-lg-3 col-xl-3"></div>
     </div>
@@ -25,6 +25,10 @@
 
 <script>
 
+import Typed from 'typed.js'
+
+
+
 export default {
   data() {
     return {
@@ -34,10 +38,20 @@ export default {
   mounted() {
     this.scrollTimer()
     this.scrollHandler()
+    this.typeAnimator()
   },
   components: {},
   computed: {},
   methods: {
+    typeAnimator() {
+      const options = {
+        strings: ["MikMak.Tv"],
+        typeSpeed: 50,
+        backsSpeed: 50
+      }
+
+      var typed = new Typed('#typed-string', options)
+    },
     scrollTimer() {
       setTimeout(() => {
         this.showScroll = true
@@ -112,5 +126,26 @@ export default {
     position: absolute;
     right: 10px;
     bottom: 10px;
+  }
+
+  .typed-cursor{
+  opacity: 1;
+  animation: typedjsBlink 0.7s infinite;
+  -webkit-animation: typedjsBlink 0.7s infinite;
+  animation: typedjsBlink 0.7s infinite;
+  }
+  @keyframes typedjsBlink{
+    50% { opacity: 0.0; }
+  }
+  @-webkit-keyframes typedjsBlink{
+    0% { opacity: 1; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1; }
+  }
+  .typed-fade-out{
+    opacity: 0;
+    transition: opacity .25s;
+    -webkit-animation: 0;
+    animation: 0;
   }
 </style>
