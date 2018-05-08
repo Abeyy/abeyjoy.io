@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <Header></Header>
-    <Skills></Skills>
+    <Intro></Intro>
   </div>
 </template>
 
 <script>
-import Header from './components/header/header.vue'
-import Skills from './components/skills/skills.vue'
+
+import Intro from './components/intro/intro.vue'
+
 export default {
   components: {
-    Header: Header,
-    Skills: Skills
+    Intro: Intro
   },
   mounted() {
     console.log('hi')
@@ -20,5 +19,7 @@ export default {
 </script>
 
 <style lang="scss">
-
+  #app {
+    background-color: #282a36;
+  }
 </style>
