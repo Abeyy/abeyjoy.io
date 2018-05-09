@@ -2,9 +2,9 @@
   <div class="intro">
     <div class="aj-header-links">
       <a href="#"> Resume </a>
-      <a href="#"> GitHub </a>
-      <a href="#"> LinkedIn </a>
-      <a href="#"> Instagram </a>
+      <a href="https://github.com/Abeyy"> GitHub </a>
+      <a href="https://www.linkedin.com/in/abey-joy-02385085/"> LinkedIn </a>
+      <a href="https://www.instagram.com/abeyjjoy/"> Instagram </a>
     </div>
     <br>
     <br>
