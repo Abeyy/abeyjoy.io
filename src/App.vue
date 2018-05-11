@@ -1,20 +1,24 @@
 <template>
   <div id="app">
-    <Intro></Intro>
+    <div class="">
+        <Intro></Intro>
+    </div>
+
+    <Background></Background>
   </div>
 </template>
 
 <script>
 
 import Intro from './components/intro/intro.vue'
+import Background from './components/background/background.vue'
 
 export default {
   components: {
-    Intro: Intro
+    Intro: Intro,
+    Background: Background
   },
-  mounted() {
-    console.log('hi')
-  }
+  mounted() {}
 }
 </script>
 

@@ -51,7 +51,8 @@
 
 <style lang="scss">
   .intro {
-    height: 100vh;
+    height: 100%;
+    background-color: #282a36;
   }
 
   .aj-header-text {
