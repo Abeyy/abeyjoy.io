@@ -154,6 +154,13 @@ ul.education-list {
   margin-right: auto;
 }
 
+.collab-section button {
+  background-color: lightslategrey;
+  border: 1px solid lightslategrey;
+  color: black;
+  /* text-transform: uppercase; */
+}
+
 .emailMe {
-  font-size: 25px;
+  font-size: 50px;
 }
