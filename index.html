@@ -11,27 +11,123 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./styles/main.css">
+    <script type="text/javascript" src="https://rawgit.com/mattboldt/typed.js/v2.0.6/lib/typed.min.js"></script>
+
   </head>
 
   <body>
     <div class="intro-header">
       <div class="nav">
-
-
-      <div class="nav-links">
-        <a href="#">GitHub</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">Instagram</a>
+        <div class="nav-links">
+          <a href="#">Resume</a>
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Instagram</a>
+        </div>
       </div>
-      </div>
+
       <div class="intro-text">
         <h1> Hello! </h1>
-        <h1> I'm Abey. I'm a design oriented full stack software engineer with an
+        <h1> I'm <span class="intro-header-name">Abey Joy.</span> I'm a design oriented full stack software engineer with an
         interest in anything remotely to do with web development. I specialize in
         growing teams, instantiating processes, and wearing as many hats as it takes
         to get the job done. </h1>
+        <h1> <i class="fas fa-arrow-right"></i> Currently disrupting how you shop at <a href="https://www.mikmak.tv"><span id="typewriter"></span></a></h1>
       </div>
 
     </div>
+
+    <div class="skills-section">
+      <div class="skills-header row">
+        <h3 class="skills-heading col-xs-12 col-s-12 col-md-2 col-lg-2 col-xl-2"> Skills </h3>
+
+          <div class="skill-list-item col-xs-12 col-s-12 col-md-2 col-lg-2 col-xl-2">
+              <h3> Education </h3>
+              <ul class="education-list">
+                <li class="education-list-nyu"> NYU Tandon </li>
+                <br>
+                <li> Electrical Engineering, </li>
+                <li>  B.S., 2017 </li>
+                <br>
+                <li> Computer Engineering, </li>
+                <li> B.S., 2015 </li>
+              </ul>
+          </div>
+
+          <div class="skill-list-item col-xs-12 col-s-12 col-md-2 col-lg-2 col-xl-2">
+            <h3> Languages </h3>
+            <ul>
+              <li> JavaScript </li>
+              <li> Python </li>
+              <li> HTML </li>
+              <li> SASS/CSS </li>
+              <li> Ruby </li>
+              <li> C++ </li>
+            </ul>
+          </div>
+
+          <div class="skill-list-item col-xs-12 col-s-12 col-md-2 col-lg-2 col-xl-2">
+            <h3> Frameworks/Tools </h3>
+            <ul>
+              <li> React.js </li>
+              <li> Vue.js </li>
+              <li> Node.js </li>
+              <li> NPM/Yarn</li>
+            </ul>
+          </div>
+      </div>
+
+      <div class="projects-section">
+        <div class="projects-header">
+          <div class="projects-heading">
+            <h3> My Work </h3>
+            <div class=" projects-card-list row">
+              <div class="project-card card col-xs-12 col-s-12 col-md-3 col-lg-3 col-xl-3" style="width: 18rem">
+                <img class="card-img-top" src="./assets/bg_image.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="project-card card col-xs-12 col-s-12 col-md-3 col-lg-3 col-xl-3" style="width: 18rem">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="project-card card col-xs-12 col-s-12 col-md-3 col-lg-3 col-xl-3" style="width: 18rem">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.onload = function typed() {
+        const options = {
+            strings: ["MikMak.Tv"],
+            typeSpeed: 50,
+            backsSpeed: 50
+          }
+
+          var typed = new Typed('#typewriter', options)
+      }
+    </script>
   </body>
+
+
 </html>
