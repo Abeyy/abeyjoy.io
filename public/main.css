@@ -147,11 +147,19 @@ ul.education-list {
 }
 
 .card-img-top {
-  border-radius: 50%;
+  border-radius: 14%;
   padding: 15px;
-  width: 90%;
+  /* width: 90%; */
   height: 50%;
-  margin-left: 5%;
+  /* margin-left: 5%; */
+}
+
+@media screen and (max-device-width: 766px) {
+  .card-img-top {
+    border-radius: 13%;
+    width: 95%;
+    margin-left: 2.5%;
+  }
 }
 
 .card-title {
