@@ -147,11 +147,11 @@ ul.education-list {
 }
 
 .card-img-top {
-  border-radius: 14%;
-  padding: 15px;
-  /* width: 90%; */
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 50%;
-  /* margin-left: 5%; */
+  width: 100%;
 }
 
 @media screen and (max-device-width: 766px) {
