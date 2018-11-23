@@ -136,6 +136,7 @@ ul.education-list {
   border: 2px solid lightblue;
   max-width: 300px;
   padding: 5px;
+  cursor: pointer;
 }
 
 @media screen and (max-device-width: 766px) {
