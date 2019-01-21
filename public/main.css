@@ -139,12 +139,6 @@ ul.education-list {
 }
 
 @media screen and (max-device-width: 766px) {
-  .card-img-top {
-    border-radius: 13%;
-    width: 95%;
-    margin-left: 2.5%;
-  }
-  
   .project-card {
     min-height: 560px;
   }
