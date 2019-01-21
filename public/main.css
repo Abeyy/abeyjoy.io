@@ -79,7 +79,7 @@ body {
   color: white;
 }
 
-.skills-heading h3{
+.skills-heading h3, .projects-heading h3{
   color: lightseagreen;
   padding-left: 15px;
 }
