@@ -126,15 +126,7 @@ ul.education-list {
   padding: 5px;
   cursor: pointer;
   min-height: 485px;
-  min-width: 347.5px;
-}
-
-@media screen and (max-device-width: 766px) {
-  .project-card {
-    max-width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-  }
+  min-width: 250px;
 }
 
 .card-img-top {
@@ -151,6 +143,10 @@ ul.education-list {
     border-radius: 13%;
     width: 95%;
     margin-left: 2.5%;
+  }
+  
+  .project-card {
+    min-height: 560px;
   }
 }
 
