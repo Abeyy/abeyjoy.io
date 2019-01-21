@@ -30,7 +30,7 @@ body {
   margin-top: 125px;
   margin-left: 25px;
   padding: 25px;
-  max-width: 700px;
+  max-width: 710px;
 }
 
 .intro-header-name {
@@ -65,7 +65,6 @@ body {
   /* End Typewriter Effect */
 .skills-section {
   margin-top: 200px;
-  margin-left: 50px;
 }
 
 .skills-header {
@@ -80,8 +79,9 @@ body {
   color: white;
 }
 
-h3.skills-heading {
+.skills-heading h3{
   color: lightseagreen;
+  padding-left: 15px;
 }
 
 .skill-list-item {
@@ -90,12 +90,6 @@ h3.skills-heading {
 
 .skill-list-item h3 {
   margin-bottom: 25px;
-}
-
-@media screen and (min-width: 1000px) {
-  .skill-list-item:first-of-type {
-    margin-left: 100px;
-  }
 }
 
 .skill-list-item ul {
@@ -108,6 +102,7 @@ ul.education-list {
   width: 200px;
   padding: 25px;
 }
+
 
 .education-list-nyu {
   font-size: 18px;
@@ -123,20 +118,14 @@ ul.education-list {
   letter-spacing: 2px;
 }
 
-@media screen and (min-width: 1000px) {
-  .project-card:first-of-type {
-    margin-left: 150px;
-  }
-}
-
 .project-card {
   margin: 25px;
   background-color: black;
   color: lightblue;
   border: 2px solid lightblue;
-  max-width: 300px;
   padding: 5px;
   cursor: pointer;
+  min-height: 485px;
 }
 
 @media screen and (max-device-width: 766px) {
@@ -153,6 +142,7 @@ ul.education-list {
   background-repeat: no-repeat;
   height: 50%;
   width: 100%;
+  min-height: 255px;
 }
 
 @media screen and (max-device-width: 766px) {
