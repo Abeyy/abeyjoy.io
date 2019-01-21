@@ -126,6 +126,7 @@ ul.education-list {
   padding: 5px;
   cursor: pointer;
   min-height: 485px;
+  min-width: 347.5px;
 }
 
 @media screen and (max-device-width: 766px) {
